@@ -5,6 +5,8 @@
 .tabuleiro {
     background-color: goldenrod;
     padding: 10px;
+    display: flex;
+    gap: 5px;
 }
 
 .casa {
