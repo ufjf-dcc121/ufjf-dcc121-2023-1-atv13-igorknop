@@ -17,8 +17,8 @@ function recebeAlgo(evento) {
     if (!arrastado || !evento.target.classList.contains('casa')) {
         return;
     }
-    const posDisco = arrastado.dataset.posicao;
-    const posCasa = evento.target.dataset.posicao;
+    const posDisco = Number(arrastado.dataset.posicao);
+    const posCasa = Number(evento.target.dataset.posicao);
     console.log(`tentar mover o disco de ${posDisco} para ${posCasa}`);
     if (mover(posDisco, posCasa)) {
         console.log(`disco foi de ${posDisco} para ${posCasa}`);
