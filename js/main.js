@@ -21,6 +21,7 @@ function recebeAlgo(evento) {
         if(mover(posDisco,posCasa)){
             console.log(`disco foi de ${posDisco} para ${posCasa}`);
             evento.target.appendChild(arrastado);
+            arrastado.dataset.posicao = posCasa;
             arrastado = null;
         } else {
             console.log(`Não pode mover o disco de ${posDisco} para ${posCasa}`);
