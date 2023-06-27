@@ -4,3 +4,6 @@ export function getTabuleiro() {
     return structuredClone(tabuleiro);
 }
 
+export function mover(de, para){
+    return false;
+}
