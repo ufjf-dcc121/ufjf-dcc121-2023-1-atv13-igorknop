@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    max-width: 500px;
+}
+
+.tabuleiro {
+    background-color: goldenrod;
+    padding: 2%;
+    display: flex;
+    gap: 1%;
+    width: min(100%, 500px);
+}
+
+.casa {
+    background-color: aquamarine;
+    width: calc(100% / 7);
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disco {
+    background-color: black;
+    border: 5% solid white;
+    height: 80%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.disco.branco {
+    background-color: white;
+    border-color: black;
+}
